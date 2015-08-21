@@ -15,8 +15,8 @@ exports.press_simultaneous = function (array) {
 
 exports.do_shortcut = function (shortcut_code) {
     if(!config.keyboard_shortcuts[shortcut_code]) {
-        return console.err('Shortcut code ' + shortcut_code 
-                            + ' does not exist.');
+        return console.err('Shortcut code ' + 
+            shortcut_code + ' does not exist.');
     }
     exports.press_simultaneous(config.keyboard_shortcuts[shortcut_code]);
 };
