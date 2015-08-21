@@ -1,6 +1,6 @@
 'use strict';
 
-var movements = require('../lib/movements.js'),
+var mouse = require('../movements/mouse.js'),
     _ = require('lodash'),
     sleeper = require('sleep');
 
@@ -17,15 +17,15 @@ exports.erratic_mouse = function (move_length, sleep_time, can_click) {
 
         switch (random_move_index) {
             case 0 :
-                movements.move_vertical(get_random_in_range(move_length));
+                mouse.move_vertical(get_random_in_range(move_length));
             break;
 
             case 1 :
-                movements.move_horizontal(get_random_in_range(move_length));
+                mouse.move_horizontal(get_random_in_range(move_length));
             break;
 
             case 2 :
-                movements.move_diagonal(
+                mouse.move_diagonal(
                     get_random_in_range(move_length), 
                     get_random_in_range(move_length)
                 );
@@ -33,7 +33,7 @@ exports.erratic_mouse = function (move_length, sleep_time, can_click) {
 
             case 3 :
                 if(can_click) {
-                    movements.do_click();
+                    mouse.do_click();
                 }
             break;
         }
