@@ -31,4 +31,3 @@ var movements = require('./lib/movements.js'),
     };
 
 start();
-
