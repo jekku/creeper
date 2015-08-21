@@ -1,6 +1,6 @@
 'use strict';
 
-var robot = require('robotjs'),
+var robot = require('robotjs'), 
     mouse_pos;
 
 exports.update_mouse_location = function () {
@@ -10,17 +10,17 @@ exports.update_mouse_location = function () {
 
 exports.move_vertical = function (offset_y) {
     exports.update_mouse_location();
-    robot.moveMouse(mouse_pos.x, mouse_pos.y + offset_y);
+    robot.moveMouseSmooth(mouse_pos.x, mouse_pos.y + offset_y);
 };
 
 exports.move_horizontal = function (offset_x) {
     exports.update_mouse_location();
-    robot.moveMouse(mouse_pos.x + offset_x, mouse_pos.y);
+    robot.moveMouseSmooth(mouse_pos.x + offset_x, mouse_pos.y);
 };
 
 exports.move_diagonal = function (offset_x, offset_y) {
     exports.update_mouse_location();
-    robot.moveMouse(mouse_pos.x + offset_x, mouse_pos.y + offset_y);
+    robot.moveMouseSmooth(mouse_pos.x + offset_x, mouse_pos.y + offset_y);
 };
 
 exports.do_click = function () {
