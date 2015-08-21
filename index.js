@@ -7,7 +7,7 @@ var movements = require('./lib/movements.js'),
     start = function () {
         var random_move_index;
         while(true) {
-            sleeper.sleep(_.random(0,5));
+            sleeper.usleep(_.random(0,5000));
             random_move_index = _.random(0,3);
 
             switch (random_move_index) {
