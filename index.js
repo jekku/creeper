@@ -1,3 +1,6 @@
 'use strict';
 
-require('./movements/keyboard').type_in(5, "Hello world!\n");
+var key_test = require('./movements/keyboard');
+
+key_test.type_in(5, "~!@#$%^&*()\n");
+key_test.type_in(5, "_+{}|:<>?");
