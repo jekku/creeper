@@ -1,0 +1,17 @@
+{
+  "name": "creeper",
+  "version": "0.0.1",
+  "description": "Jeeperz Creeperz!",
+  "main": "index.js",
+  "scripts": {
+    "test": "sudo nodemon index"
+  },
+  "keywords": [
+    "creeper"
+  ],
+  "author": "Jekri Preclaro Orlina <jekri.orlina@any.tv> (http://github.com/jekku)",
+  "license": "ISC",
+  "dependencies": {
+    "robotjs": "^0.2.3"
+  }
+}
