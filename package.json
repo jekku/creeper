@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "lodash": "^3.10.1",
+    "node-gyp": "^2.0.2",
     "robotjs": "^0.2.3",
     "sleep": "^3.0.0"
   }
